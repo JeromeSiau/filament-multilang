@@ -25,7 +25,7 @@ composer require jeromesiau/filament-multilang
 
 This package automatically integrates [Spatie Laravel Translatable](https://github.com/spatie/laravel-translatable) to efficiently manage translations storage.
 
-You can publish the configuration file:
+To configure available languages, you can publish the configuration file:
 
 ```bash
 php artisan vendor:publish --tag="filament-multilang-config"
@@ -41,6 +41,10 @@ return [
     ],
 ];
 ```
+
+Simply modify the `locales` array to add, remove, or change the available languages for your application. Each language requires a key (language code) and a name that will be displayed in the language tabs.
+
+By default, when displaying values in Filament tables, the component will use the translation that corresponds to your application's default locale (`APP_LOCALE` environment variable). This ensures a consistent display in listings while still maintaining full multilingual capabilities in forms.
 
 ## Model Configuration
 
