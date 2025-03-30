@@ -1,0 +1,42 @@
+.fi-multilang-input {
+    position: relative !important;
+    ring: 0 !important;
+    border: none !important;
+    --tw-ring-shadow: 0 0 #0000 !important;
+    --tw-ring-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.fi-multilang-input > div {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fi-multilang-input .fi-tabs {
+    position: absolute !important;
+    height: 1.5rem !important;
+    line-height: 1.5rem !important;
+    right: 0 !important;
+    top: 0 !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.fi-multilang-input .fi-tabs-item {
+    border-color: transparent !important;
+    padding: 0 0.5rem !important;
+    margin: 0 !important;
+    min-height: 1.5rem !important;
+    border-width: 0 !important;
+    border-bottom-width: 2px !important;
+}
+
+.fi-multilang-input .fi-tabs-item:not(.fi-tabs-item-active) {
+    background-color: transparent !important;
+    border-bottom: transparent !important;
+}
+
+.fi-multilang-input .fi-tabs-item:not(.fi-tabs-item-active):hover {
+    background-color: transparent !important;
+}

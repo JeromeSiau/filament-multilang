@@ -2,6 +2,19 @@
 
 A component for managing multilingual fields in Filament 3, integrated with Spatie Laravel Translatable.
 
+![MultiLang Input Screenshot](resources/images/screenshot.png)
+
+## Why This Plugin?
+
+This plugin was created to offer a focused, input-level approach to multilingual content in Filament forms, unlike other solutions that implement translations at the page or fieldset level.
+
+Key features:
+- **Input-level language tabs**: Each translatable field has its own compact set of language tabs directly on the input
+- **Flexible validation**: Define which languages are required on a per-field basis
+- **Multiple input types**: Works seamlessly with both standard text inputs and rich text editors
+
+The goal is to provide a streamlined editing experience for multilingual content that feels natural and integrated with Filament's design philosophy.
+
 ## Installation
 
 You can install the package via composer:
@@ -118,6 +131,10 @@ Data is stored as an associative array with language codes as keys:
 ```
 
 With Spatie Laravel Translatable, this array is automatically stored in a JSON field in your database, which greatly simplifies translation management.
+
+## Styling
+
+The component comes with default styling that places language tabs neatly at the top-right of each input field. You can customize the appearance by targeting the `.fi-multilang-input` CSS class in your own stylesheets.
 
 ## Credits
 

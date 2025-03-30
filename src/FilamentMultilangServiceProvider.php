@@ -23,7 +23,7 @@ class FilamentMultilangServiceProvider extends PackageServiceProvider
         $package
             ->name(static::$name)
             ->hasConfigFile()
-            ->hasViews()
+            ->hasAssets()
             ->publishesServiceProvider('FilamentMultilangServiceProvider');
     }
 
@@ -47,5 +47,10 @@ class FilamentMultilangServiceProvider extends PackageServiceProvider
         \Filament\Forms\Components\Field::macro('multiLangInput', function (string $name) {
             return MultiLangInput::make($name);
         });
+
+        // Register CSS assets
+        FilamentAsset::register([
+            Css::make('multilang-input', __DIR__ . '/../resources/css/multilang-input.css'),
+        ]);
     }
 } 
