@@ -1,0 +1,28 @@
+{
+    "name": "jeromesiau/filament-multilang",
+    "description": "Multi-language input component for Filament 3",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JeromeSiau\\FilamentMultilang\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0",
+        "spatie/laravel-translatable": "^6.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeromeSiau\\FilamentMultilang\\FilamentMultilangServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+} 
