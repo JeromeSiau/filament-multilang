@@ -70,7 +70,7 @@ class MultiLangInput extends Tabs
         return $this;
     }
 
-    public function transform(callable $transformCallback, callable $reverseTransformCallback = null): static
+    public function transform(callable $transformCallback, ?callable $reverseTransformCallback = null): static
     {
         $this->transformCallback = $transformCallback;
         $this->reverseTransformCallback = $reverseTransformCallback;
