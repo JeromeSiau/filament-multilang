@@ -7,6 +7,11 @@
     box-shadow: none !important;
 }
 
+.dark .fi-multilang-input,
+.dark\:bg-gray-900:is(.dark *) .fi-multilang-input {
+    background-color: transparent !important;
+}
+
 .fi-multilang-input > div {
     margin: 0 !important;
     padding: 0 !important;

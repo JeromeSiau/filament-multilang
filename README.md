@@ -44,7 +44,7 @@ return [
 
 Simply modify the `locales` array to add, remove, or change the available languages for your application. Each language requires a key (language code) and a name that will be displayed in the language tabs.
 
-By default, when displaying values in Filament tables, the component will use the translation that corresponds to your application's default locale (`APP_LOCALE` environment variable). This ensures a consistent display in listings while still maintaining full multilingual capabilities in forms.
+By default, when displaying values in Filament tables, the component will use the translation that corresponds to your application's current locale (`APP_LOCALE` environment variable by defaut). This ensures a consistent display in listings while still maintaining full multilingual capabilities in forms.
 
 ## Model Configuration
 
