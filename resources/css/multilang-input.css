@@ -7,8 +7,11 @@
     box-shadow: none !important;
 }
 
+.fi-multilang-input,
 .dark .fi-multilang-input,
-.dark\:bg-gray-900:is(.dark *) .fi-multilang-input {
+.dark\:bg-gray-900:is(.dark *) .fi-multilang-input,
+.bg-white.fi-multilang-input
+{
     background-color: transparent !important;
 }
 
