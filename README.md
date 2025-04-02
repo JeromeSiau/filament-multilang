@@ -62,6 +62,16 @@ class Page extends Model
 }
 ```
 
+Important: Spatie Translatable recommends that translatable database fields should be defined as `json` type (or `text` if JSON is not available in your database). Make sure your migration reflects this:
+
+```php
+Schema::create('pages', function (Blueprint $table) {
+    $table->id();
+    $table->json('title');
+    $table->json('content');
+    $table->timestamps();
+});
+
 ## Usage
 
 ```php
