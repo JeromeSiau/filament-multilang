@@ -71,6 +71,7 @@ Schema::create('pages', function (Blueprint $table) {
     $table->json('content');
     $table->timestamps();
 });
+```
 
 ## Usage
 
